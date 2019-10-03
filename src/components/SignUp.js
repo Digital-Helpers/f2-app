@@ -40,10 +40,10 @@ const SignUp = ()=> {
     return(
         <>
         <h2>Sign Up</h2>
-        <form>
+        {/* <form>
             <input type="email" name="email" placeholder="email" />
             <input type="password" name="password" placeholder="password" />
-        </form>
+        </form> */}
         <div id="firebaseui-auth-container"></div>
         <div id="loader">Loading...</div>
         </>
