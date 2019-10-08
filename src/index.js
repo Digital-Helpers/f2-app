@@ -3,7 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { Auth0Provider } from "./components/react-auth0-wrapper";
+import { Auth0Provider } from "./utils/react-auth0-wrapper";
 
 // A function that routes the user to the right place
 // after login
