@@ -11,7 +11,7 @@ const Profile = () => {
       <div>Loading...</div>
     );
   }
-
+console.log(user)
   return (
     <Fragment>
       <img src={user.picture} alt="Profile" />
