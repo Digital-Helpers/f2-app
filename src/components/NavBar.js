@@ -5,14 +5,14 @@ import { useAuth0 } from "../utils/react-auth0-wrapper";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  const { isAuthenticated, loginWithRedirect, loginWithPopup, logout } = useAuth0();
+  const { isAuthenticated, loginWithRedirect, loginWithPopup, logout  } = useAuth0();
 console.log(window.location.origin)
   return (
     <div>
       {!isAuthenticated && (
         <button
           onClick={() =>
-            loginWithRedirect({})
+            loginWithPopup({})
           }
         >
           Log in

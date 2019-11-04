@@ -2,7 +2,6 @@
 
 import React, { Fragment } from "react";
 import { useAuth0 } from "../utils/react-auth0-wrapper";
-import {getUserData} from "../utils/userdata"
 
 const Profile = () => {
   const { loading, user } = useAuth0();
@@ -12,7 +11,6 @@ const Profile = () => {
       <div>Loading...</div>
     );
   }
-  getUserData()
   return (
     <Fragment>
       <img src={user.picture} alt="Profile" />
